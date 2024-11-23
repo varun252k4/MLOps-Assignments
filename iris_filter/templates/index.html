@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Iris Data Filter</title>
+</head>
+<body>
+    
+    <div class="container" >
+        <h1>Iris Data Filtering</h1>
+        <label for="species">Select Species:</label>
+        <select id="species">
+            <option value="Iris-setosa">Setosa</option>
+            <option value="Iris-versicolor">Versicolor</option>
+            <option value="Iris-virginica">Virginica</option>
+        </select>
+        <button onclick="filterData()">Filter Data</button>
+    </div>
+    
+    <div id="result" class="container">
+        <div id="table-container">
+            <h2>Filtered Data</h2>
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>Sepal Length (cm)</th>
+                        <th>Sepal Width (cm)</th>
+                        <th>Petal Length (cm)</th>
+                        <th>Petal Width (cm)</th>
+                        <th>Species</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        
+        <div id="visualization-container">
+            <img id="visualization" src="" alt="Feature Visualization" style="display: none;">
+        </div>
+    </div>
+</div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
