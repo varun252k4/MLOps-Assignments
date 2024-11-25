@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: iris-filter-service
+  labels:
+    app: iris-filter
+spec:
+  selector:
+    app: iris-filter
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8000
+  type: NodePort
